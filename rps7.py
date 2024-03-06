@@ -48,7 +48,7 @@ def rps():
                 return "Python wins!"
         game_result = decide_winner(player, computer)
         print(game_result)
-        nonlocal game_count # can't use global anymore, as game_count is inside the scope of rps
+        nonlocal game_count
         game_count += 1
         print(f"\nGame count: {str(game_count)}")
         print(f"\nPlayer wins:{str(player_wins)}")
@@ -65,7 +65,7 @@ def rps():
         else:
             print("Thank you for playing!\n")
             sys.exit("Bye!")
-    return play_rps # returning the function, not calling the function into action with parentheses
+    return play_rps
 rock_paper_scissors = rps()
 
 if __name__ == "__main__":
