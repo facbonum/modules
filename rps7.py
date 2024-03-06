@@ -18,7 +18,7 @@ def rps():
         print("")
         playerchoice = input(
             "Enter...\n1 for Rock, \n2 for Paper, or \n3 for Scissors:\n\n")
-        if playerchoice not in ["1", "2", "3"]: # all user input is String
+        if playerchoice not in ["1", "2", "3"]:
             print("You must enter 1, 2, or 3.")
             return play_rps()
         player = int(playerchoice)
